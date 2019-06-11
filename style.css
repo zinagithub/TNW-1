@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    margin: 0;
+    font-family: Lato, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+a:hover{
+    color : black;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.orange_{
+    color:  #f42;
+}
+.myflex{
+    display: flex;
+}
