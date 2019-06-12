@@ -163,13 +163,12 @@ nav {
     }
 
     .topbar2-part2 ul li {
-
         padding-top: 12px;
-    padding-bottom: 6px;
-    padding-left: 23px;
-    padding-right: 15px;
-    border-left: 1px solid rgba(161,161,161,0.4);
-    font-size: 25px;
+        padding-bottom: 6px;
+        padding-left: 23px;
+        padding-right: 15px;
+        border-left: 1px solid rgba(161,161,161,0.4);
+        font-size: 25px;
     }
     .topbar2-part2 ul:last-child{
         color : red;
@@ -305,12 +304,12 @@ nav {
     margin : 20px;
 }
 .left-main-content .title {
-    margin-top: 300px;
+    margin-top: 330px;
     margin-left:20px;
     font-size: 30px;
 }
 .right-part-up .title , .right-part-down .title{
-    margin-top: 100px;
+    margin-top: 130px;
     margin-left:20px;
     font-size: 20px;
 }
@@ -710,13 +709,14 @@ footer{
     height: 47px;
     border : 1px solid #555;
     background: #555;
-    border-radius: 50%;
+    border-radius: 90%;
     text-align: center;
 }
 
 .rounded-link i {
-    vertical-align: -10px;
-    color : white;
+    position: relative;
+    top: 30%;
+    color: white;
 }
 
 .footer-copyright {
