@@ -753,3 +753,7 @@ footer{
 .footer-links-menu div a:hover{
     color : white;
 }
+
+.my-search {
+    margin-top: 8px;
+}
