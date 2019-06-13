@@ -573,14 +573,12 @@ h6{
 
 /*-------------------------------------------------------------*/
 @media only screen and (max-width: 1024px){
-    .apps-gear-tech-etc-row{
-        
-    }
     .apps-gear-tech-etc-col{
 
     width: 49%!important
    
 }
+
 }
 @media (max-width: 767px){
     .apps-gear-tech-etc-row{
