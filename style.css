@@ -23,16 +23,22 @@ nav {
     display: flex;
 }
 .logo {
-    width: 80px;
-    height: 55px;
+    width: 100px;
+    height: 60px;
     padding: 1rem;
     background-color: #f42;
     background: linear-gradient(to bottom right,#c09,#f42 85%);
     position: relative;
+    top:-45;
+    left:0;
     cursor: pointer;
+    z-index: 3;
 }
 .logo-img {
+    width: 100%;
+    height: 50px;
     position: relative;
+    top :-30px;
     max-width: 100%;
     transform: translateY(45%);
 }
@@ -40,6 +46,11 @@ nav {
 .main_menu{
     width: 100%;
     height: 70px;
+    position: fixed;
+    z-index: 1;
+    background: white;
+    top: 0;
+    left: 0;
 }
 
 .topbar1{
@@ -132,7 +143,9 @@ nav {
     }
     .bars {
         display: block;
-        /*float : right;*/
+    }
+    .topbar2 {
+        margin-left: 4%;
     }
     .topbar2-part2{
         width : 100%;
@@ -148,18 +161,15 @@ nav {
     .topbar2-part2 ul li {
 
         padding-top: 12px;
-    padding-bottom: 6px;
-    padding-left: 23px;
-    padding-right: 15px;
-    border-left: 1px solid rgba(161,161,161,0.4);
-    font-size: 25px;
+        padding-bottom: 8px;
+        padding-left: 23px;
+        padding-right: 15px;
+        border-left: 1px solid rgba(161,161,161,0.4);
+        font-size: 25px;
     }
     .topbar2-part2 ul:last-child{
         color : red;
     }
-}
-@media only screen and (min-width: 1024px){
-
 }
 /*--------------------------------------------------------------------------*/
 
@@ -172,6 +182,7 @@ nav {
     grid-gap: 10px;
     width: 100%;
     background: #ddd;
+    margin-top: 70px;
 }
 
 
@@ -179,6 +190,7 @@ nav {
     .main-content {
         grid-template-columns: 1fr;
         grid-template-rows: min-content auto;
+        margin-top: 0;
     }
     .main-content  .left-main-content .overlay{
         display: none;
@@ -213,12 +225,12 @@ nav {
     background-position: center;
 }
 .main-content  .left-main-content .overlay{
-    position : absolute;
-    top : 0;
-    left : 0;
-    width : 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
     height: 100%;
-    background-color: rgba(225, 68, 75, 0.47);
+    background-color: rgba(27, 26, 26, 0.47);
 }
 .logo2-img {
     position: absolute;
@@ -269,10 +281,7 @@ nav {
 .right-part-up {
     position: relative;
     margin : 10px 10px;
-    background: /*linear-gradient(
-    rgba(0, 0, 0, 0),
-    black),*/
-    url('../TNW-1/images/right1.jpg');
+    background: url('../TNW-1/images/right1.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -306,7 +315,7 @@ nav {
           height: 600px!important
     }
     .latest-news-2 {
-    height: 1250px!important
+    height: 1270px!important
 }
     .new {
         float : none!important;
@@ -350,31 +359,37 @@ nav {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
     .latest-news-divs {
-        /*display: none;*/
         height: 100px!important
     }
      .latest-news {
-    height: 600px!important
-}   
+        height: 600px!important
+    }   
 
     .latest-news-2 {
-    height: 900px!important
-}
-    .new{
-        
+        height: 900px!important
+    }
+    .new{     
         width :33.33%!important;
     }
 }
-.container1 {
-    width : 80%;
-    margin : 0 auto;
+.container {
+    background: #f1efef;
+    width : 100%;
+    height: auto;
+    margin-top: -19px;
 }
+.container1 {
+        width : 80%;
+        margin : 0 auto;
+
+}
+
 h3 {
     font-family: Avalon,sans-serif;
     font-size: 28px;
     letter-spacing: -.015em;
     color : #f42;
-    margin-top : 20px;
+    margin-top : 25px;
     margin-left: 5px;
 }
 h4,
@@ -384,6 +399,7 @@ h6{
 .latest-news{
     height: auto;
     clear : both;
+    padding : 10px;
 }
 .latest-news-2 {
     height: 600px
@@ -573,14 +589,12 @@ h6{
 
 /*-------------------------------------------------------------*/
 @media only screen and (max-width: 1024px){
-    .apps-gear-tech-etc-row{
-        
-    }
     .apps-gear-tech-etc-col{
 
     width: 49%!important
    
 }
+
 }
 @media (max-width: 767px){
     .apps-gear-tech-etc-row{
